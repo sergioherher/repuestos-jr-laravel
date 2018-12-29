@@ -80,10 +80,61 @@
               width:100%;
             }
 
-            .slick-prev:before, .slick-next:before {
-                line-height: 100px;
-                color:black !important
+            .principal-prev{
+                  float: left;
+                  left: 0px;
+                  top: 170px;
+                  z-index: 10;
+                  position: absolute;
             }
+
+            .principal-next{
+                  float: left;
+                  left: 95%;
+                  top: 170px;
+                  z-index: 10;
+                  position: absolute;
+            }
+
+            .secundario-prev{
+                  float: left;
+                  left: 6%;
+                  top: 43%;
+                  z-index: 20;
+                  position: absolute;
+            }
+
+            .secundario-next{
+                  float: left;
+                  left: 90%;
+                  top: 43%;
+                  z-index: 10;
+                  position: absolute;
+            }
+
+            .carrusel-principal{
+                  width: 100%;
+                  float: left; 
+            }
+
+            .carrusel-secundario{
+                  width: 80%;
+                  left: 10%;
+                  float: left; 
+            }
+
+
+            .contenedor-carrusel-principal{
+                  width: 100%;
+                  float: left;
+                  position: relative;
+            }
+            .contenedor-carrusel-secundario{
+                  width: 100%;
+                  float: left;
+                  position: relative;
+            }
+
     </style>
 </head>
 <body id="app-layout">
@@ -112,11 +163,27 @@
     {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
 
     <script type="text/javascript"> 
-          $(".slick-carrusel").slick({
-          dots: true,
-          infinite: true,
-          slidesToShow: 3,
-          slidesToScroll: 1
+        $(document).ready(function() {
+            $(".slick-carrusel-principal").slick({
+              dots: false,
+              arrows: true,
+              infinite: true,
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              prevArrow: $('.principal-prev'),
+              nextArrow: $('.principal-next'),
+            });
+
+            $(".slick-carrusel-secundario").slick({
+              dots: false,
+              arrows: true,
+              infinite: true,
+              slidesToShow: 6,
+              slidesToScroll: 1,
+              rows: 2,
+              prevArrow: $('.secundario-prev'),
+              nextArrow: $('.secundario-next'),
+            });
         });
     </script>
 </body>
