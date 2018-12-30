@@ -1,0 +1,111 @@
+.fa-btn {
+    margin-right: 6px;
+}
+.margin-card {
+    margin-top: 20px
+}
+h4 {
+    text-shadow: 2px 2px #ab47bc;
+}
+
+body {
+  background-color: gainsboro;
+  font-family: "Open Sans", sans-serif;
+  padding: 0px 0px;
+  font-size: 18px;
+  margin: 0;
+  color: #444;
+}
+
+h1 {
+  font-family: "Merriweather", serif;
+  font-size: 32px;
+}
+
+.card-secundaria-accion {
+  display: none;
+}
+
+.texto-menu {
+  margin-left: 40px;
+  font-weight: bold;
+  margin-right: 40px;
+  font-size: 21px;
+}
+
+.sidenav {
+  background-color: gainsboro;
+}
+
+.titulos-medios {
+  padding: 5px;
+}
+
+.texto-tarjeta {
+  font-size: 16px;
+}
+
+.trans--grow{
+  -webkit-transition: width 1s ease-out; /* For Safari 3.1 to 6.0 */
+  transition: width 1s  ease-out;
+  width : 0%;
+}
+
+.grow{
+  width:100%;
+}
+
+.principal-prev{
+      float: left;
+      left: 0px;
+      top: 170px;
+      z-index: 10;
+      position: absolute;
+}
+
+.principal-next{
+      float: left;
+      left: 96%;
+      top: 170px;
+      z-index: 10;
+      position: absolute;
+}
+
+.secundario-prev{
+      float: left;
+      left: 6%;
+      top: 43%;
+      z-index: 20;
+      position: absolute;
+}
+
+.secundario-next{
+      float: left;
+      left: 90%;
+      top: 43%;
+      z-index: 10;
+      position: absolute;
+}
+
+.carrusel-principal{
+      width: 100%;
+      float: left; 
+}
+
+.carrusel-secundario{
+      width: 80%;
+      left: 10%;
+      float: left; 
+}
+
+
+.contenedor-carrusel-principal{
+      width: 100%;
+      float: left;
+      position: relative;
+}
+.contenedor-carrusel-secundario{
+      width: 100%;
+      float: left;
+      position: relative;
+}
